@@ -33,7 +33,8 @@ travis-ci = { repository = "dalek-cryptography/x25519-dalek", branch = "master"}
 features = ["nightly"]
 
 [dependencies]
-curve25519-dalek = { version = "3", default-features = false }
+curve25519-dalek= { branch = "feature/my-rand_core", git = "https://github.com/cipepser/curve25519-dalek", default-features = false }
+#curve25519-dalek = { version = "3", default-features = false }
 #rand_core = { version = "0.5", default-features = false }
 rand_core = { branch = "feature/only-trait", git = "https://github.com/cipepser/rand", default-features = false }
 # `serde` is renamed to `our_serde` in order to avoid a name collision between
